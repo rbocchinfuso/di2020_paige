@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>My Project</h2>
+<button onclick="myFunction()">Click Me</button>
+<p id="demo"></p>
+<script>
+function myFunction() {
+  var txt;
+  var answer = prompt("Do you eat meat?", "Yes or No");
+  if (answer == null || answer == "") {
+    txt = "No answer provided";
+  } else{
+  	if(answer == "Yes" || answer == "yes"){
+    txt = "You should try the carnivore diet! <a href='https://shawn-baker.com/'>Learn More</a>";
+    }else{
+    txt = "You should try the plant based diet! <a href='https://gamechangersmovie.com/'>Learn More</a>";
+    }
+  }	
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+</body>
+</html>
